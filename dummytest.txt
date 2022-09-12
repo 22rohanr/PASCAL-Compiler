@@ -1,0 +1,72 @@
+	.data
+	var ignore: .word 0	 #creates a variable with default value 0
+	.text
+	.globl main
+main:
+	subu $sp $sp 4	 #allocating memory
+	sw $ra ($sp)	 #pushes register on the stack
+	li $v0 4	#loads value to the register
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 2	#loads value to the register
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 3	#loads value to the register
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	addu $v0 $t0 $v0	 #moves the sum of v0 and t0 to v0
+	div $t0 $v0
+	mflo $v0	 #moves the product of v0 and t0 to v0
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 2	#loads value to the register
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 3	#loads value to the register
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	mult $v0 $t0
+	mflo $v0	 #moves the product of v0 and t0 to v0
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	jal procfoo
+	li $v0 4	#loads value to the register
+	lw $v0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	li $v0 2	#loads value to the register
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 3	#loads value to the register
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	addu $v0 $t0 $v0	 #moves the sum of v0 and t0 to v0
+	div $t0 $v0
+	mflo $v0	 #moves the product of v0 and t0 to v0
+	lw $v0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	li $v0 2	#loads value to the register
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 3	#loads value to the register
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	mult $v0 $t0
+	mflo $v0	 #moves the product of v0 and t0 to v0
+	lw $v0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	lw $ra ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	sw $v0 varignore
+	li $v0 10
+	syscall
+procfoo:
+	li, $v0, 0
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li, $v0, 0
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li, $v0, 0
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	jr $ra

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Program
+comment0.text=\r\n\ Describes\ the\ overarching\ program\ with\ its\ various\ procedure\ declarations\r\n\ and\ variable\ names\r\n\ @author\ Rohan\ Rashingkar\r\n\ @version\ 12/10/21\r\n
+comment1.params=procedureList\ stmnt\ globVars
+comment1.target=Program(java.util.List,\ Statement,\ java.util.List)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Program\r\n\ @param\ procedureList\ the\ list\ of\ all\ procedures\ in\ the\ program\r\n\ @param\ stmnt\ the\ statement\ for\ this\ prog\r\n\ @param\ globVars\ the\ list\ of\ global\ variables\r\n
+comment2.params=env
+comment2.target=void\ exec(environment.Environment)
+comment2.text=\r\n\ Executes\ the\ program\ with\ its\ procedures\ and\ statement\r\n\ @param\ env\ the\ environment\ of\ execution\r\n
+comment3.params=fileName
+comment3.target=void\ compile(java.lang.String)
+comment3.text=\r\n\ Compiles\ the\ program\ into\ MIPS\ code\r\n\ @param\ fileName\ the\ name\ of\ the\ file\ for\ the\ emitter\r\n
+numComments=4

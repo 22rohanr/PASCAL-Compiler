@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Assignment
+comment0.text=\r\n\ Describes\ statements\ specifically\ for\ variable\ assignment\r\n\r\n\ @author\ Rohan\ Rashingkar\r\n\ @version\ 11/16/21\r\n
+comment1.params=newVariable\ newExp
+comment1.target=Assignment(java.lang.String,\ Expression)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Assignment\r\n\ @param\ newVariable\ the\ variable\ to\ receive\ the\ assignment\r\n\ @param\ newExp\ the\ new\ value\ of\ the\ variable\r\n
+comment2.params=env
+comment2.target=void\ exec(environment.Environment)
+comment2.text=\r\n\ Runs\ the\ assignment\ statement,\ setting\ the\ given\ variable's\ value\r\n\ to\ exp\r\n\r\n\ @param\ env\ the\ environment\ of\ execution\r\n
+comment3.params=e
+comment3.target=void\ compile(emitter.Emitter)
+numComments=4

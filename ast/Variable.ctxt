@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Variable
+comment0.text=\r\n\ Describes\ a\ variable\ that\ will\ be\ used\ in\ the\ abstract\ syntax\ trees\r\n\r\n\ @author\ Rohan\ Rashingkar\r\n\ @version\ 11/16/21\r\n
+comment1.params=newName
+comment1.target=Variable(java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Variable\r\n\ @param\ newName\ the\ name\ of\ the\ variable\r\n
+comment2.params=env
+comment2.target=int\ eval(environment.Environment)
+comment2.text=\r\n\ Gives\ the\ value\ that\ the\ variable\ represents\r\n\r\n\ @param\ env\ the\ environment\ of\ the\ evaluation\r\n\ @return\ the\ value\ of\ the\ given\ variable\r\n
+comment3.params=e
+comment3.target=void\ compile(emitter.Emitter)
+numComments=4

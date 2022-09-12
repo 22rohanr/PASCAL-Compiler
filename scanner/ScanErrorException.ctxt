@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ScanErrorException
+comment0.text=\r\n\ ScanErrorException\ is\ a\ sub\ class\ of\ Exception\ and\ is\ thrown\ to\ indicate\ a\ \r\n\ scanning\ error.\ \ Usually,\ the\ scanning\ error\ is\ the\ result\ of\ an\ illegal\ \r\n\ character\ in\ the\ input\ stream.\ \ The\ error\ is\ also\ thrown\ when\ the\ expected\r\n\ value\ of\ the\ character\ stream\ does\ not\ match\ the\ actual\ value.\r\n\ @author\ Mr.\ Page\r\n\ @version\ 062014\r\n\r\n
+comment1.params=
+comment1.target=ScanErrorException()
+comment1.text=\r\n\ default\ constructor\ for\ ScanErrorObjects\r\n
+comment2.params=reason
+comment2.target=ScanErrorException(java.lang.String)
+comment2.text=\r\n\ Constructor\ for\ ScanErrorObjects\ that\ includes\ a\ reason\ for\ the\ error\r\n\ @param\ reason\ the\ cause\ of\ the\ error\r\n
+numComments=3

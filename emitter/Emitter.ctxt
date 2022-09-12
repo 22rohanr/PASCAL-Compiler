@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Emitter
+comment0.text=\r\n\ Writes\ an\ output\ file\ with\ MIPS\ Code\ corresponding\ to\ \r\n\ the\ program's\ PASCAL\ code\r\n\ @author\ Rohan\ Rashingkar\r\n\ @version\ 1/8/21\r\n
+comment1.params=outputFileName
+comment1.target=Emitter(java.lang.String)
+comment1.text=\r\n\ Creates\ an\ emitter\ for\ writing\ to\ a\ new\ file\ with\ given\ name\r\n\ @param\ outputFileName\ the\ name\ of\ the\ output\ file\r\n
+comment2.params=code
+comment2.target=void\ emit(java.lang.String)
+comment2.text=\r\n\ prints\ one\ line\ of\ code\ to\ file\ (with\ non-labels\ indented)\r\n\ @param\ code\ the\ code\ to\ emit\r\n
+comment3.params=
+comment3.target=void\ close()
+comment3.text=\r\n\ closes\ the\ file.\ \ should\ be\ called\ after\ all\ calls\ to\ emit.\r\n
+comment4.params=reg
+comment4.target=void\ emitPush(java.lang.String)
+comment4.text=\r\n\ Pushes\ a\ register\ onto\ the\ variable\ stack\r\n\ @param\ reg\ the\ register\ to\ be\ used\ in\ this\ operation\r\n
+comment5.params=reg
+comment5.target=void\ emitPop(java.lang.String)
+comment5.text=\r\n\ Pops\ a\ register\ from\ the\ variable\ stack\r\n\ @param\ reg\ the\ register\ to\ be\ used\ in\ this\ operation\r\n
+comment6.params=
+comment6.target=int\ nextLabelID()
+comment6.text=\r\n\ Gets\ the\ id\ for\ the\ next\ label\ in\ MIPS\r\n\ @return\ the\ ID\ for\ the\ next\ label\r\n
+numComments=7

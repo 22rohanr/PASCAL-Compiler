@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=If
+comment0.text=\r\n\ Describes\ a\ classic\ if\ statement\r\n\r\n\ @author\ Rohan\ Rashingkar\r\n\ @version\ 11/16/21\r\n
+comment1.params=newCondition\ newStatement
+comment1.target=If(Condition,\ Statement)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ If\r\n\ @param\ newCondition\ the\ condition\ of\ the\ if\ statement\r\n\ @param\ newStatement\ the\ statement\ that\ will\ run\ if\ the\ condition\ is\ met\r\n
+comment2.params=env
+comment2.target=void\ exec(environment.Environment)
+comment2.text=\r\n\ Runs\ the\ full\ if\ statement\r\n\r\n\ @param\ env\ the\ environment\ of\ evaluation\r\n
+comment3.params=e
+comment3.target=void\ compile(emitter.Emitter)
+numComments=4

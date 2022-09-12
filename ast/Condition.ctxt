@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Condition
+comment0.text=\r\n\ Describes\ a\ condition\ for\ an\ if\ statement\r\n\r\n\ @author\ Rohan\ Rashingkar\r\n\ @version\ 11/16/21\r\n
+comment1.params=newOperator\ newExp1\ newExp2
+comment1.target=Condition(java.lang.String,\ Expression,\ Expression)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Condition\r\n\ @param\ newOperator\ the\ operator\ that\ will\ be\ used\r\n\ @param\ newExp1\ the\ expression\ on\ the\ left\ side\ of\ the\ operator\r\n\ @param\ newExp2\ the\ expression\ on\ the\ right\ side\ of\ the\ operator\r\n
+comment2.params=env
+comment2.target=int\ eval(environment.Environment)
+comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ env\ \ the\ environment\ of\ evaluation\r\n\ @return\ 1\ if\ it\ is\ true\ otherwise\ return\ 0\ if\ it\ is\ false\r\n
+comment3.params=e\ label
+comment3.target=void\ compile(emitter.Emitter,\ java.lang.String)
+comment3.text=\r\n\ Compiles\ the\ program\ into\ MIPS\ code\r\n\ @param\ e\ the\ emitter\ for\ this\ compiling\ method\r\n\ @param\ label\ to\ jump\ to\ in\ the\ code\r\n
+numComments=4

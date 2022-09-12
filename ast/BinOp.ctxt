@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=BinOp
+comment0.text=\r\n\ Describes\ binary\ operators\ in\ expressions\ that\ will\ be\ \r\n\ used\ in\ the\ abstract\ syntax\ trees\r\n\r\n\ @author\ Rohan\ Rashingkar\r\n\ @version\ 11/16/21\r\n
+comment1.params=newOperator\ newExp1\ newExp2
+comment1.target=BinOp(java.lang.String,\ Expression,\ Expression)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ BinOp\r\n\ @param\ newOperator\ the\ binary\ operator\ that\ will\ be\ used\ \r\n\ on\ the\ expressions\r\n\ @param\ newExp1\ the\ first\ expression\ to\ be\ operated\ on\r\n\ @param\ newExp2\ the\ second\ expression\ to\ be\ operated\ on\r\n
+comment2.params=env
+comment2.target=int\ eval(environment.Environment)
+comment2.text=\r\n\ Calculates\ the\ value\ of\ the\ (exp1\ (operator)\ exp2)\r\n\r\n\ @param\ env\ the\ environment\ of\ the\ evaluation\r\n\ @return\ the\ result\ of\ the\ binary\ operaton\r\n
+comment3.params=e
+comment3.target=void\ compile(emitter.Emitter)
+numComments=4

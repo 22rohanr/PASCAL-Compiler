@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Block
+comment0.text=\r\n\ Describes\ block\ statements,\ a\ series\ of\ statements\ within\ \r\n\ a\ "BEGIN"\ and\ "END"\r\n\r\n\ @author\ Rohan\ Rashingkar\r\n\ @version\ 12/16/21\r\n
+comment1.params=newStatements
+comment1.target=Block(java.util.List)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Block\r\n\ @param\ newStatements\ the\ list\ of\ statements\ in\ the\ block\r\n
+comment2.params=env
+comment2.target=void\ exec(environment.Environment)
+comment2.text=\r\n\ Runs\ every\ statement\ in\ the\ block\ statement\r\n\ @param\ \ env\ the\ environment\ of\ execution\r\n
+comment3.params=e
+comment3.target=void\ compile(emitter.Emitter)
+numComments=4

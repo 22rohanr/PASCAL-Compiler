@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Statement
+comment0.text=\r\n\ Describes\ a\ statement\ that\ can\ be\ executed\r\n\r\n\ @author\ Rohan\ Rashingkar\r\n\ @version\ 11/16/21\r\n
+comment1.params=env
+comment1.target=void\ exec(environment.Environment)
+comment1.text=\r\n\ Runs\ the\ statement\r\n\ @param\ env\ the\ environment\ of\ execution\r\n
+comment2.params=e
+comment2.target=void\ compile(emitter.Emitter)
+comment2.text=\r\n\ Compiles\ the\ program\ into\ MIPS\ code\r\n\ @param\ e\ the\ emitter\ for\ this\ compiling\ method\r\n
+numComments=3

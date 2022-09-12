@@ -1,0 +1,43 @@
+#BlueJ class context
+comment0.target=Scanner
+comment0.text=\r\n\ Scanner\ is\ a\ simple\ scanner\ for\ Compilers\ and\ \r\n\ Interpreters\ (2021-2022)\ lab\ exercise\ 1\r\n\ @author\ Rohan\ Rashingkar\r\n\ @version\ 9/8/21\r\n\ Usage\:\ Tokenizes\ an\ input\ stream\ into\ numbers,\ identifiers,\ and\ operators\r\n
+comment1.params=inStream
+comment1.target=Scanner(java.io.InputStream)
+comment1.text=\r\n\ Scanner\ constructor\ for\ construction\ of\ a\ scanner\ that\ \r\n\ uses\ an\ InputStream\ object\ for\ input.\ \ \r\n\ Usage\:\ Constructs\ a\ scanner\ if\ given\ an\ input\ stream\r\n\ FileInputStream\ inStream\ \=\ new\ FileInputStream(new\ File(<file\ name>);\r\n\ Scanner\ lex\ \=\ new\ Scanner(inStream);\r\n\ @param\ inStream\ the\ input\ stream\ to\ use\r\n
+comment10.params=
+comment10.target=java.lang.String\ scanNumber()
+comment10.text=\r\n\ Method\:\ scanNumber\ -\ Combines\ digit\ chars\ into\ a\ number\r\n\ @return\ the\ number\ parsed\ by\ the\ scanner\r\n
+comment11.params=
+comment11.target=java.lang.String\ scanIdentifier()
+comment11.text=\r\n\ Method\:\ scanIdentifier\r\n\ Usage\:\ Combines\ digit\ and\ letter\ chars\ into\ an\ identifier\r\n\ @return\ the\ identifier\ parsed\ by\ the\ scanner\r\n
+comment12.params=
+comment12.target=java.lang.String\ scanOperand()
+comment12.text=\r\n\ Method\:\ scanOperand\r\n\ Usage\:\ Parses\ operands\ from\ the\ input\ stream\r\n\ @return\ the\ parsed\ operand\r\n
+comment13.params=
+comment13.target=java.lang.String\ nextToken()
+comment13.text=\r\n\ Method\:\ nextToken\r\n\ Usage\:\ Obtains\ the\ next\ token\ in\ the\ input\ stream\r\n\ @return\ the\ next\ token\ in\ the\ input\ stream\r\n
+comment2.params=inString
+comment2.target=Scanner(java.lang.String)
+comment2.text=\r\n\ Scanner\ constructor\ for\ constructing\ a\ scanner\ that\ \r\n\ scans\ a\ given\ input\ string.\ \ It\ sets\ the\ end-of-file\ flag\ an\ then\ reads\r\n\ the\ first\ character\ of\ the\ input\ string\ \r\n\ into\ the\ instance\ field\ currentChar.\r\n\ Usage\:\ Scanner\ lex\ \=\ new\ Scanner(input_string);\r\n\ @param\ inString\ the\ string\ to\ scan\r\n
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment3.text=\r\n\ Method\:\ main\r\n\ Usage\:\ tests\ the\ scanner\r\n\ @param\ args\ an\ array\ of\ strings\r\n\ @throw\ IOException\ an\ exception\ from\ reading\ or\ outputting\ the\ file\r\n\ @throw\ ScanErrorException\ an\ exception\ from\ scanning\r\n
+comment4.params=
+comment4.target=void\ getNextChar()
+comment4.text=\r\n\ Method\:\ getNextChar\r\n\ Usage\:\ obtains\ the\ next\ character\ in\ the\ input\ stream\r\n
+comment5.params=expected
+comment5.target=void\ eat(char)
+comment5.text=\r\n\ Method\:\ eat\r\n\ Usage\:\ moves\ on\ to\ the\ next\ character\ in\ the\ input\ stream\r\n\ @param\ expected\ the\ expected\ char\ in\ the\ input\ stream\r\n
+comment6.params=
+comment6.target=boolean\ hasNext()
+comment6.text=\r\n\ Method\:\ hasNext\r\n\ Usage\:\ determines\ if\ there\ is\ another\ char\ in\ the\ input\ stream\r\n\ @return\ true\ if\ there\ is\ another\ char\ otherwise\ return\ false\r\n
+comment7.params=character
+comment7.target=boolean\ isDigit(char)
+comment7.text=\r\n\ Method\:\ isDigit\r\n\ Usage\:\ determines\ if\ a\ char\ is\ a\ digit\r\n\ @param\ character\ the\ character\ to\ test\r\n\ @return\ true\ if\ the\ character\ is\ a\ digit\ otherwise\ return\ false\r\n
+comment8.params=character
+comment8.target=boolean\ isLetter(char)
+comment8.text=\r\n\ Method\:\ isLetter\r\n\ Usage\:\ determine\ if\ a\ char\ is\ a\ letter\r\n\ @param\ character\ the\ character\ to\ test\r\n\ @return\ true\ if\ character\ is\ a\ letter\ otherwise\ return\ false\r\n
+comment9.params=character
+comment9.target=boolean\ isWhiteSpace(char)
+comment9.text=\r\n\ Method\:\ isWhiteSpace\r\n\ Usage\:\ determine\ if\ a\ char\ is\ a\ white\ space\r\n\ @param\ character\ the\ character\ to\ test\r\n\ @return\ true\ if\ character\ is\ a\ white\ space\ otherwise\ return\ false\r\n
+numComments=14

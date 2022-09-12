@@ -1,0 +1,161 @@
+	.data
+	varx: .word 0	 #creates a variable with default value 0
+	vary: .word 0	 #creates a variable with default value 0
+	varcount: .word 0	 #creates a variable with default value 0
+	.text
+	.globl main
+main:
+	li $v0 2	#loads value to the register
+	sw $v0 varx
+	la $t0 varx	 #loads address of var into t0
+	lw $v0 ($t0)	 #loads the contents of the variable into t0
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 1	#loads value to the register
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	addu $v0 $t0 $v0	 #moves the sum of v0 and t0 to v0
+	div $t0 $v0
+	mflo $v0	 #moves the product of v0 and t0 to v0
+	sw $v0 vary
+	la $t0 varx	 #loads address of var into t0
+	lw $v0 ($t0)	 #loads the contents of the variable into t0
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	la $t0 vary	 #loads address of var into t0
+	lw $v0 ($t0)	 #loads the contents of the variable into t0
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	addu $v0 $t0 $v0	 #moves the sum of v0 and t0 to v0
+	div $t0 $v0
+	mflo $v0	 #moves the product of v0 and t0 to v0
+	sw $v0 varx
+	la $t0 varx	 #loads address of var into t0
+	lw $v0 ($t0)	 #loads the contents of the variable into t0
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	la $t0 vary	 #loads address of var into t0
+	lw $v0 ($t0)	 #loads the contents of the variable into t0
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	mult $v0 $t0
+	mflo $v0	 #moves the product of v0 and t0 to v0
+	move $a0 $v0	 #moves contents of v0 to a0
+	li $v0 1
+	syscall	 #prints the integer in a0
+	li $v0, 11
+	li $a0, 10
+	syscall	 #prints the newline character
+	la $t0 varx	 #loads address of var into t0
+	lw $v0 ($t0)	 #loads the contents of the variable into t0
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	la $t0 vary	 #loads address of var into t0
+	lw $v0 ($t0)	 #loads the contents of the variable into t0
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	ble $t0 $v0 endif1
+	la $t0 varx	 #loads address of var into t0
+	lw $v0 ($t0)	 #loads the contents of the variable into t0
+	move $a0 $v0	 #moves contents of v0 to a0
+	li $v0 1
+	syscall	 #prints the integer in a0
+	li $v0, 11
+	li $a0, 10
+	syscall	 #prints the newline character
+	la $t0 vary	 #loads address of var into t0
+	lw $v0 ($t0)	 #loads the contents of the variable into t0
+	move $a0 $v0	 #moves contents of v0 to a0
+	li $v0 1
+	syscall	 #prints the integer in a0
+	li $v0, 11
+	li $a0, 10
+	syscall	 #prints the newline character
+endif1:
+	li $v0 14	#loads value to the register
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 14	#loads value to the register
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	bne $t0 $v0 endif2
+	li $v0 14	#loads value to the register
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 14	#loads value to the register
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	beq $t0 $v0 endif3
+	li $v0 3	#loads value to the register
+	move $a0 $v0	 #moves contents of v0 to a0
+	li $v0 1
+	syscall	 #prints the integer in a0
+	li $v0, 11
+	li $a0, 10
+	syscall	 #prints the newline character
+endif3:
+	li $v0 14	#loads value to the register
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 14	#loads value to the register
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	bgt $t0 $v0 endif4
+	li $v0 4	#loads value to the register
+	move $a0 $v0	 #moves contents of v0 to a0
+	li $v0 1
+	syscall	 #prints the integer in a0
+	li $v0, 11
+	li $a0, 10
+	syscall	 #prints the newline character
+endif4:
+endif2:
+	li $v0 15	#loads value to the register
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 14	#loads value to the register
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	ble $t0 $v0 endif5
+	li $v0 5	#loads value to the register
+	move $a0 $v0	 #moves contents of v0 to a0
+	li $v0 1
+	syscall	 #prints the integer in a0
+	li $v0, 11
+	li $a0, 10
+	syscall	 #prints the newline character
+endif5:
+	li $v0 1	#loads value to the register
+	sw $v0 varcount
+while6:
+	la $t0 varcount	 #loads address of var into t0
+	lw $v0 ($t0)	 #loads the contents of the variable into t0
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 15	#loads value to the register
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	bgt $t0 $v0 endif7
+	la $t0 varcount	 #loads address of var into t0
+	lw $v0 ($t0)	 #loads the contents of the variable into t0
+	move $a0 $v0	 #moves contents of v0 to a0
+	li $v0 1
+	syscall	 #prints the integer in a0
+	li $v0, 11
+	li $a0, 10
+	syscall	 #prints the newline character
+	la $t0 varcount	 #loads address of var into t0
+	lw $v0 ($t0)	 #loads the contents of the variable into t0
+	subu $sp $sp 4	 #allocating memory
+	sw $v0 ($sp)	 #pushes register on the stack
+	li $v0 1	#loads value to the register
+	lw $t0 ($sp)	 #pops the content of the stack into the register
+	addu $sp $sp 4	 #getting rid of the memory
+	addu $v0 $t0 $v0	 #moves the sum of v0 and t0 to v0
+	div $t0 $v0
+	mflo $v0	 #moves the product of v0 and t0 to v0
+	sw $v0 varcount
+	j while6	 #continues the loop
+endif7:
+	li $v0 10
+	syscall

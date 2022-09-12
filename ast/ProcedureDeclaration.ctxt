@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=ProcedureDeclaration
+comment0.text=\r\n\ Describes\ the\ declaration\ for\ a\ procedure,\ including\ its\ name,\ parameters,\r\n\ and\ statement\r\n\r\n\ @author\ Rohan\ Rashingkar\r\n\ @version\ 12/10/21\r\n
+comment1.params=n\ s\ p
+comment1.target=ProcedureDeclaration(java.lang.String,\ Statement,\ java.util.List)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ ProcedureDeclaration\r\n\ @param\ n\ the\ name\ of\ the\ procedure\r\n\ @param\ s\ the\ statement\ in\ the\ procedure\r\n\ @param\ p\ the\ procedure's\ parameters\ in\ a\ list\r\n
+comment2.params=env
+comment2.target=void\ exec(environment.Environment)
+comment2.text=\r\n\ Runs\ every\ statement\ in\ the\ block\ statement\r\n\ @param\ \ env\ the\ environment\ of\ execution\r\n
+comment3.params=
+comment3.target=Statement\ getProcedure()
+comment3.text=\r\n\ Gives\ public\ access\ to\ the\ statement\ of\ this\ procedure\r\n\ declaration\r\n\ @return\ this\ procedure\ declaration's\ statement\r\n
+comment4.params=
+comment4.target=java.util.List\ getParameters()
+comment4.text=\r\n\ Gives\ public\ access\ to\ parameters\ of\ this\ procedure\r\n\ declaration\r\n\ @return\ the\ list\ of\ parameters\ in\ this\ procedure\r\n\ declaration\r\n
+comment5.params=
+comment5.target=java.lang.String\ getName()
+comment5.text=\r\n\ Gives\ public\ access\ to\ the\ name\ of\ this\ procedure\r\n\ declaration\r\n\ @return\ this\ procedure\ declaration's\ name\r\n
+comment6.params=e
+comment6.target=void\ compile(emitter.Emitter)
+numComments=7
